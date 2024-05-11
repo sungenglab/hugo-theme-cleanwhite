@@ -26,6 +26,8 @@ var disq = new iDisqus('disqus-comment', {
         envId: '{{ .Site.Params.twikoo_env_id }}',
         el: '#twikoo-tcomment',
         locale: 'zh-CN',
+
+        //mail notify，but it seems invalid?
         notify: {
         server: 'smtp.163.com',
         port: 465,
@@ -34,6 +36,16 @@ var disq = new iDisqus('disqus-comment', {
         password: 'NNUFRPNNSWJMEFBG',
         sender: 'Twikoo <geng_sun@163.com>',
         receiver: ['geng_sun@163.com'],
+
+        // Image upload service, I choose Github as my service.
+        upload: {
+        service: 'github',
+        owner: 'sungenbglab',
+        repo: 'SiteSupporter',
+        path: 'images/',
+        branch: 'main',
+        token: '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',
+  },
   },
     })
 </script>
