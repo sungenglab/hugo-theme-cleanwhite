@@ -25,7 +25,8 @@ var disq = new iDisqus('disqus-comment', {
     twikoo.init({
         envId: '{{ .Site.Params.twikoo_env_id }}',
         el: '#twikoo-tcomment',
-        locale: 'zh-CN',
+        lang: 'zh-CN',
+        region: 'ap-guangzhou',
 
         //mail notify，but it seems invalid?
         notify: {
