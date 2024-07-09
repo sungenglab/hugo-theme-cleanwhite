@@ -1,0 +1,15 @@
+{{ define "main" }}
+    <div class="row">
+        <div class="col-left">
+            {{ partial "siderbar.html" . }}
+        </div>
+        <div class="col-right">
+            <article>
+                <h1>{{ .Title }}</h1>
+                <div>
+                    {{ .Content }}
+                </div>
+            </article>
+        </div>
+    </div>
+{{ end }}
